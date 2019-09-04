@@ -3,12 +3,7 @@ import './Components.css';
 
 const Followers = ({ githubFollowers }) => {
 
-    // map through our followers
-    const followers = githubFollowers.map(follower => {
-        console.log(follower)
-    })
-
-    return (
+      return (
         <div className="card">
         <div className="card-image waves-effect waves-block waves-light">
             <img className="activator" src={githubFollowers.avatar_url} />
@@ -19,7 +14,7 @@ const Followers = ({ githubFollowers }) => {
             <p><a href={githubFollowers.html_url} target="_blank">Checkout My GitHub</a></p>
         </div>
         <div className="card-reveal">
-            <span className="card-title grey-text text-darken-4">{githubFollowers.login}<i class="material-icons right">X</i></span>
+            <span className="card-title grey-text text-darken-4">{githubFollowers.login}<i className="material-icons right">X</i></span>
             <p>{githubFollowers.bio}</p>
         </div>
     </div>
