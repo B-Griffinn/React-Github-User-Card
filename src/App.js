@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 
 import UserCard from './Components/User';
+import FollowerButton from './Components/FollowerButton';
 import Followers from './Components/Followers';
 
 class App extends React.Component {
@@ -39,23 +40,26 @@ class App extends React.Component {
 //       })
 //       // }
 //     console.log(this.state.user !== prevState.user)
-// }
-      
+// } 
   render() {
   return (
     <div className="App">
+      <h1 className="App-header">
+        My gitHub User Cards
+      </h1>
+      <div className="cards">
       <UserCard githubUser={this.state.user} />
-      
-      {this.state.followers.map(follower => {
-        return(<Followers key={follower.id} githubFollowers={follower}/>)
-      })
-      
-    }
+      { this.state.followers.map(follower => {
+        return (
+          <Followers 
+          key={follower.id}
+          githubFollowers={follower}
+          />)
+        })  }
+        </div>
     </div>
   )
-
  };
-
 }
 
 export default App;

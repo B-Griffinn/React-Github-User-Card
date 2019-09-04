@@ -1,3 +1,10 @@
 .card {
-    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 30%;
+    margin: 10px 10px 10px 10px;
+
+    box-shadow: 3px 3px #e0e0e0;
 } 

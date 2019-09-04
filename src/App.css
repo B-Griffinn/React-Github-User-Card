@@ -1,6 +1,19 @@
 .App {
-  text-align: center;
+  border: 6px solid #607d8b;
+  border-radius: 7px;
+
+  background-color: #cfd8dc ;
+
+  width: 80%;
+  margin-left: 10%;
 }
+
+.cards{
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -9,14 +22,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #eceff1;
+  border-radius: 7px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  height: 10vh;
+  width: 99%;
+
+  margin-left: 0.5%;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
